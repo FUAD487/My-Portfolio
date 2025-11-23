@@ -208,22 +208,22 @@
 
             <h3 class="text-3xl font-bold mb-4">About Me</h3>
             <div class="bg-[color:var(--card-bg)] border p-6 rounded-2xl shadow-md">
-                <p class="text-slate-300">Hi, I’m Fuad Abdullah Mahi — a passionate Front-End Developer.
+                <p class="text-slate-300">Hi, I'm Fuad Abdullah Mahi — a passionate Front-End Developer.
                     I specialize in creating modern, responsive, and clean websites using HTML, CSS, Tailwind CSS,
                     JavaScript, and basic React.
-                    Currently, I’m in the 8th semester of my Diploma in CST, and I love turning ideas into beautiful and
+                    Currently, I'm in the 8th semester of my Diploma in CST, and I love turning ideas into beautiful and
                     functional user interfaces.
 
                     I enjoy learning new technologies, improving UI/UX, and building projects that solve real-world
                     problems.
-                    My goal is to become a professional Web Designer & Front-End Developer, and I’m working hard every
+                    My goal is to become a professional Web Designer & Front-End Developer, and I'm working hard every
                     day to grow my skills.
 
                     Besides coding, I love exploring new design trends, creating portfolio layouts, and helping people
                     through technology.
 
-                    📌 I believe in hard work, creativity, and continuous learning.
-                    Let’s build something amazing together!.</p>
+                    <br> I believe in hard work, creativity, and continuous learning.
+                    Let's build something amazing together!.</p>
             </div>
         </div>
     </section>
@@ -414,7 +414,7 @@
                     <h4 class="font-semibold text-blue-300 text-lg">Diploma in Engineering (CST)</h4>
                     <p class="text-slate-300 mt-2"><span class="font-semibold">Institute:</span> Rangpur Polytechnic
                         Institute, Rangpur</p>
-                    <p class="text-slate-300">Session: 2021–22</p>
+                    <p class="text-slate-300">Session: 2021-22</p>
                     <p class="text-slate-300">Semester: 8th</p>
                     <p class="text-slate-300 font-semibold">CGPA: 3.55</p>
                     <p class="text-slate-400 mt-3 text-sm">
@@ -575,9 +575,9 @@
     </footer>
 
 
-    <!-- SCRIPTS: reveal on scroll + theme toggle (full auto mode) -->
+
     <script>
-        // Reveal on scroll (works reliably — fixes stuck animation issue)
+
         (function () {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -591,11 +591,10 @@
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
         })();
 
-        // Theme toggle: Full Auto Mode (Option A)
         const themeSwitch = document.getElementById('themeSwitch');
         const htmlEl = document.documentElement;
 
-        // Initialize: prefer dark by default (site built in dark). If user has saved preference, use it.
+
         const saved = localStorage.getItem('site-theme');
         if (saved === 'light') {
             htmlEl.classList.remove('dark');
@@ -619,12 +618,10 @@
                 localStorage.setItem('site-theme', 'light');
             }
 
-            // Update body colors for non-tailwind elements
             document.body.style.background = getComputedStyle(document.documentElement).getPropertyValue('--bg');
             document.body.style.color = getComputedStyle(document.documentElement).getPropertyValue('--text');
         });
 
-        // ensure body colors set correctly on load
         document.addEventListener('DOMContentLoaded', () => {
             document.body.style.background = getComputedStyle(document.documentElement).getPropertyValue('--bg');
             document.body.style.color = getComputedStyle(document.documentElement).getPropertyValue('--text');
